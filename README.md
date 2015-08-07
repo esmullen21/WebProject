@@ -7,4 +7,4 @@ Then we had to write the code for the website we designed, host it and test it. 
 
 To test the site, we had to host it. Mine is still hosted on my Google Drive and can be found at the following link:
 
-googledrive.com/host/0BycPhSsiLHJgfkQ5TFFGbkU0M0dIMEJBVWJqWGNfZThoTGhZcGlsRGNsTmRaenJZYk9wZkU
+https://d71361df48656ee539f728af3b6f1448ab052735.googledrive.com/host/0BycPhSsiLHJgfkQ5TFFGbkU0M0dIMEJBVWJqWGNfZThoTGhZcGlsRGNsTmRaenJZYk9wZkU/
