@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<head>  <!-- Head contents part of gridsystem. Stylesheets my own -->
+
+	
+	
+	<title>Wonderful World of Baking</title>
+	<meta charset="utf-8">
+	<meta name="description" content="This website is about baking. It has a few recipes, a converter and a list of substitutions">
+	<meta name="keywords" content="baking, recipes, converter, substitutions">
+	<meta name="author" content="Edel Smullen using the grid by www.grahamrobertsonmiller.co.uk">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<!-- Stylesheets -->
+	<link rel="stylesheet" href="css+js/style.css" media="all">
+	<link rel="stylesheet" href="css+js/col.css" media="all">
+    <link href='https://fonts.googleapis.com/css?family=Dancing+Script' rel='stylesheet' type='text/css' />
+	<link href='https://fonts.googleapis.com/css?family=Petrona' rel='stylesheet' type='text/css' />
+
+	<style type="text/css">
+
+	</style>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+	<script type="text/javascript" src="css+js/script.js"></script>
+
+</head>
+
+<body>		
+			<div class="wrapper">	
+				<div class="section group">
+					
+					<div class="col span_12_of_12">
+						<header>Wonderful World of Baking   <span class="tablettrigger"><img src="images/logo.jpg" alt="hamburger"></span></header>
+					<!-- the tablettrigger class is for the navigation on tablet version-->
+					</div>
+				</div>
+				<div class="section group">
+					<span class="trigger"><img src="images/menulogo.jpg" alt="hamburger"></span> <!-- Trigger class for mobile navigation-->
+					<nav class="col span_12_of_12">
+						<ul>
+							<li><a href="index.html">Home</a></li>
+							<li><a href="basics.html">Basics</a></li>
+							<li><a href="converter.html">Converter</a></li>
+							<li><a href="recipes.html">Recipes</a></li>
+							<li><a href="substitutions.html">Substitutions</a></li>
+							<li><a href="contact.html">Contact</a></li>
+						</ul>
+					</nav>
+				</div>
+				<div class="breadcrumb">
+					<a href="index.html">Home</a> >
+					<a href="basics.html">Basics</a>/<a href="recipes.html">Recipes</a> >
+					Victoria Sponge					
+				</div>
+				<div class="section group">
+					
+					<div class="col span_12_of_12 heading">
+						Victoria Sponge Recipe
+					</div>
+					
+				</div>
+				<div class="section group">
+					<div class="col span_1_of_12">
+						<br>
+					</div>
+					<div class="col span_4_of_12 image">
+						<img src="images/smallersponge.jpg" alt="sponge cake" > <!--http://www.eatliverun.com/victoria-sponge-cake/-->
+					</div>
+					<div class="col span_1_of_12">
+						<br>
+					</div>
+					<div class="col span_4_of_12 convert_box">
+						<h3>Converter</h3>
+						<table class="convert_small"> <!-- a converter from one unit to anther -->
+							<form action="" method="post">
+							<tr class="from">
+								<td>From:</td>
+								<td>
+									<select name="unit1" id="unit1"> <!-- user selects the unit they are going from -->
+										<option value="Null">Select a unit</option>
+										<option value="unit">--Weight--</option>
+										<option value="pounds">Pounds</option>
+										<option value="ounce">Ounces</option>
+										<option value="grams">Grams</option>
+										<option value="kg">Kgs</option>
+										<option value="unit">--Volume--</option>
+										<option value="ml">Millilitres</option>
+										<option value="litres">Litres</option>
+										<option value="floz">Fluid ounces</option>
+										<option value="tsp">Teaspoons</option>
+										<option value="tbsp">Tablespoons</option>
+										<option value="unit">--Length--</option>										
+										<option value="mm">Millimetres</option>
+										<option value="cm">Centimetres</option>
+										<option value="in">Inches</option>
+										<option value="unit">--Temperature--</option>
+										<option value="celsius">Celsius</option>
+										<option value="fahrenheit">Fahrenheit</option>
+									</select>					
+								</td>
+								<td>&nbsp;</td>
+								<td><input type="text" name="value1" id="value1" placeholder="0"></td> <!-- user enters a value for the unit they are going from-->
+							</tr>
+							<tr>
+								<td colspan="4"><br></td>
+							</tr>
+							<tr class="to">
+								<td>To:</td>
+								<td>
+									<select name="unit2" id="unit2"> <!-- user selects the unit they are going from -->
+										<option value="Null">Select a unit</option>
+										<option value="unit">--Weight--</option>
+										<option value="pounds">Pounds</option>
+										<option value="ounce">Ounces</option>
+										<option value="grams">Grams</option>
+										<option value="kg">Kgs</option>
+										<option value="unit">--Volume--</option>
+										<option value="ml">Millilitres</option>
+										<option value="litres">Litres</option>
+										<option value="floz">Fluid ounces</option>
+										<option value="tsp">Teaspoons</option>
+										<option value="tbsp">Tablespoons</option>
+										<option value="unit">--Length--</option>										
+										<option value="mm">Millimetres</option>
+										<option value="cm">Centimetres</option>
+										<option value="in">Inches</option>
+										<option value="unit">--Temperature--</option>
+										<option value="celsius">Celsius</option>
+										<option value="fahrenheit">Fahrenheit</option>
+									</select>					
+								</td>
+								<td>&nbsp;</td>
+								<td><input type="text" name="value2" id="value2"  placeholder="0"></td> <!-- user can enter a value but it won't do anything. Answer written here-->
+							</tr>
+							<tr><td colspan="4"><br></td></tr>
+							<tr><td colspan="3"></td><td><button type="button" onclick="myConvert()">Convert</button></td></tr><!-- when the button is clicked, the javascript is implemented-->
+							</form>
+						</table>
+					</div>
+					<div class="col span 1_of_12">
+						<br>
+					</div>
+				</div>
+				<div class="section group">
+					<div class="col span_12_of_12 spacer">
+						<br>
+					</div>
+				</div>
+				<div class="section group">
+					<div class="col span_1_of_12">
+						<br>
+					</div>
+					<div class="col span_4_of_12 ingredients">
+						<ul>
+							<li>Ingredients</li>
+							<li><br></li>
+							<li>Knob of butter, melted</li>
+							<li>8 oz butter, softened</li>
+							<li>8 oz sugar</li>
+							<li>4 large eggs</li>
+							<li>2 tsp vanilla extract</li>
+							<li>8 oz all-purpose flour, sifted</li>
+							<li>1 1/2 tsp baking powder</li>
+							<li>1/2 tsp baking powder</li>
+							<li class="spacer"><br></li>
+							<li><i>For the Filling:</i></li>
+							<li>Strawberry jam</li>
+							<li>240 ml heavy whipping cream, lightly whipped</li>
+							<li class="spacer"><br></li>
+							<li><i>To serve:</i></li>
+							<li>Powdered sugar, for dusting</li>
+							
+						</ul>
+					</div>
+					<div class="col span_1_of_12">
+						<br>
+					</div>
+					<div class="col span_5_of_12 method">
+					<p>Method</p>
+					<ol>					
+					<li>Preheat the oven to 350F.<br>
+					Gently heat the knob of butter in a pan and brush two 8 inch cake tins with the melted butter. <br>
+					Line the bottom of the two cake tins with a circle of greaseproof paper.<br></li>
+					&nbsp;
+					<li>In a large bowl, cream together the butter and sugar until pale and creamy, using an electric whisk or a wooden spoon. <br>
+					Beat well to ensure you get lots of air into the mixture.<br>
+					Beat in the eggs one at a time. You want to avoid the mixture curdling, so that it stays airy. If it does curdle, add a tbsp of flour.</li>
+					&nbsp;
+					<li>Sift together the flour, baking powder and salt.<br>
+					Sift together the flour, baking powder and salt.<br>
+					Fold the flour mixture into the wet ingredients using a large metal spoon (this will cut into the mixture better than a wooden spoon). <br>
+					Be careful not to over-mix it. Pour the mixture equally between the two cake tins and level.</li>
+					&nbsp;
+					<li>Place in the oven and bake for about 20-25 minutes, or until the cakes are well-risen, spring back when pressed gently with a finger and a skewer inserted into the middle comes out clean. <br>
+					Remove from the oven and set aside for 5 minutes, then remove from the tin and peel off the paper. <br>
+					Place onto a wire rack and let cool completely, about an hour.</li>
+					&nbsp;
+					<li>Sandwich the cakes together with the jam and whipped cream. <br>
+					Dust with powdered sugar and serve.</li>
+					</ol>
+					<a href="http://www.eatliverun.com/victoria-sponge-cake/">&copy; eatliverun.com</a>
+					</div>
+					
+				</div>
+				<br><br>
+				
+				<div class="section group">
+					<footer class="col span_12_of_12">
+						<b>&copy; 2015 Edel Smullen</b>
+					</footer>
+				</div>
+			</div>
+				
+</body>
+</html>

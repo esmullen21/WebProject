@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<head>  <!-- Head contents part of gridsystem. Stylesheets my own -->
+
+	
+	
+	<title>Wonderful World of Baking</title>
+	<meta charset="utf-8">
+	<meta name="description" content="This website is about baking. It has a few recipes, a converter and a list of substitutions">
+	<meta name="keywords" content="baking, recipes, converter, substitutions">
+	<meta name="author" content="Edel Smullen using the grid by www.grahamrobertsonmiller.co.uk">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<!-- Stylesheets -->
+	<link rel="stylesheet" href="css+js/style.css" media="all">
+	<link rel="stylesheet" href="css+js/col.css" media="all">
+	<link href='https://fonts.googleapis.com/css?family=Dancing+Script' rel='stylesheet' type='text/css' />
+	<link href='https://fonts.googleapis.com/css?family=Petrona' rel='stylesheet' type='text/css' />
+
+	<style type="text/css">
+
+	</style>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+	<script type="text/javascript" src="css+js/script.js"></script>
+
+</head>
+
+<body>		
+			<div class="wrapper">	
+				<div class="section group">
+					
+					<div class="col span_12_of_12">
+						<header>Wonderful World of Baking   <span class="tablettrigger"><img src="images/logo.jpg" alt="hamburger"></span></header>
+					<!-- the tablettrigger class is for the navigation on tablet version-->
+					</div>
+				</div>
+				<div class="section group">
+					<span class="trigger"><img src="images/menulogo.jpg" alt="hamburger"></span> <!-- Trigger class for mobile navigation-->
+					<nav class="col span_12_of_12">
+						<ul>
+							<li><a href="index.html">Home</a></li>
+							<li><a href="basics.html">Basics</a></li>
+							<li><a href="converter.html">Converter</a></li>
+							<li><a href="recipes.html">Recipes</a></li>
+							<li><a href="substitutions.html">Substitutions</a></li>
+							<li><a href="contact.html">Contact</a></li>
+						</ul>
+					</nav>
+				</div>
+				<div class="breadcrumb">
+					<a href="index.html">Home</a> >
+					<a href="basics.html">Basics</a>/<a href="recipes.html">Recipes</a> >
+					Cheesecake				
+				</div>
+				<div class="section group">
+					
+					<div class="col span_12_of_12 heading">
+						Cheesecake
+					</div>
+					
+				</div>
+				<div class="section group">
+					<div class="col span_1_of_12">
+						<br>
+					</div>
+					<div class="col span_4_of_12 image">
+						<img src="images/cheesecake.jpg" alt="cheesecake" height="240" width="350"> <!--http://www.cheesecakemoat.com/-->
+					</div>
+					<div class="col span_1_of_12">
+						<br>
+					</div>
+					<div class="col span_4_of_12 convert_box">
+						<h3>Converter</h3>
+						<table class="convert_small"> <!-- a converter from one unit to anther -->
+							<form action="" method="post">
+							<tr class="from">
+								<td>From:</td>
+								<td>
+									<select name="unit1" id="unit1"> <!-- user selects the unit they are going from -->
+										<option value="Null">Select a unit</option>
+										<option value="unit">--Weight--</option>
+										<option value="pounds">Pounds</option>
+										<option value="ounce">Ounces</option>
+										<option value="grams">Grams</option>
+										<option value="kg">Kgs</option>
+										<option value="unit">--Volume--</option>
+										<option value="ml">Millilitres</option>
+										<option value="litres">Litres</option>
+										<option value="floz">Fluid ounces</option>
+										<option value="tsp">Teaspoons</option>
+										<option value="tbsp">Tablespoons</option>
+										<option value="unit">--Length--</option>										
+										<option value="mm">Millimetres</option>
+										<option value="cm">Centimetres</option>
+										<option value="in">Inches</option>
+										<option value="unit">--Temperature--</option>
+										<option value="celsius">Celsius</option>
+										<option value="fahrenheit">Fahrenheit</option>
+									</select>					
+								</td>
+								<td>&nbsp;</td>
+								<td><input type="text" name="value1" id="value1" placeholder="0"></td> <!-- user enters a value for the unit they are going from-->
+							</tr>
+							<tr>
+								<td colspan="4"><br></td>
+							</tr>
+							<tr class="to">
+								<td>To:</td>
+								<td>
+									<select name="unit2" id="unit2"> <!-- user selects the unit they are going from -->
+										<option value="Null">Select a unit</option>
+										<option value="unit">--Weight--</option>
+										<option value="pounds">Pounds</option>
+										<option value="ounce">Ounces</option>
+										<option value="grams">Grams</option>
+										<option value="kg">Kgs</option>
+										<option value="unit">--Volume--</option>
+										<option value="ml">Millilitres</option>
+										<option value="litres">Litres</option>
+										<option value="floz">Fluid ounces</option>
+										<option value="tsp">Teaspoons</option>
+										<option value="tbsp">Tablespoons</option>
+										<option value="unit">--Length--</option>										
+										<option value="mm">Millimetres</option>
+										<option value="cm">Centimetres</option>
+										<option value="in">Inches</option>
+										<option value="unit">--Temperature--</option>
+										<option value="celsius">Celsius</option>
+										<option value="fahrenheit">Fahrenheit</option>
+									</select>					
+								</td>
+								<td>&nbsp;</td>
+								<td><input type="text" name="value2" id="value2"  placeholder="0"></td> <!-- user can enter a value but it won't do anything. Answer written here-->
+							</tr>
+							<tr><td colspan="4"><br></td></tr>
+							<tr><td colspan="3"></td>
+								<td><button type="button" onclick="myConvert()">Convert</button></td></tr><!-- when the button is clicked, the javascript is implemented-->
+							</form>
+						</table>
+					</div>
+					<div class="col span 1_of_12">
+						<br>
+					</div>
+				</div>
+				<div class="section group">
+					<div class="col span_12_of_12 spacer">
+						<br>
+					</div>
+				</div>
+				<div class="section group">
+					<div class="col span_1_of_12">
+						<br>
+					</div>
+					<div class="col span_4_of_12 ingredients">
+						<ul>
+							<li>Ingredients</li>
+							<li><br></li>
+							<li><i>For the Crust:</i></li>
+							<li>280g flour, all purpose</li>
+							<li>340g butter, softened</li>
+							<li>115g sugar</li>
+							<li>2 large egg yolks</li>
+							<li>1/4 teaspoon orange extract</li>
+							<li>1/4 teaspoon vanilla extract</li>							
+							<li class="spacer"><br></li>
+							<li><i>For the Filling:</i></li>
+							<li>5x8oz(226.8g) packges cream cheese</li>
+							<li>395g sugar</li>
+							<li>60ml heavy cream</li>
+							<li>3 tablespoons flour</li>
+							<li>2 large egg yoks</li>
+							<li>5 large eggs</li>
+							<li>1 teaspoon lemon extract</li>
+							<li>1 teaspoon vanilla extract</li>
+							<li>1/2 teaspoon orange extract</li>
+							
+							
+						</ul>
+					</div>
+					<div class="col span_1_of_12">
+						<br>
+					</div>
+					<div class="col span_5_of_12 method">
+					<p>Method</p>
+					<ol>
+					<li>Preheat the oven to 200 degrees celsius</li> 
+					&nbsp;
+					<li>Prepare the crust<br>
+					In a large bowl, beat flour, butter sugar, egg yolk and leomn extract together<br>
+					Shape dough into ball, wrap with cling film and refrigerate for 1 hour.<br></li>	
+					&nbsp;					
+					<li>Unwrap the dough and press into the base of a 10inch x 2 1/2inch springform pan<br>
+					Bake for 8-10minutes. Cool. Heat oven to 250 degrees celsius</li>
+					&nbsp;
+					<li>Prepare the filling<br>
+					Beat cream cheese until smooth. Then beat in the sugar, gream, flour, egg yolks, eggs and extracts. <br>
+					Beat until smooth. </li>
+					&nbsp;
+					<li>Pour filling into crust. Bake for 12minutes.</li>
+					&nbsp;
+					<li>Switch temperture to 150 degrees celsius and bake for a further 35 minutes.</li>
+					&nbsp;
+					<li>Remove from oven and cool. When cooled, referigate for 4 hours, till firm.</li>
+					&nbsp;
+					<li>When firm, carefully release the sides of the pan and serve</li>
+					&nbsp;
+					</ol>
+					<a href="http://www.cheesecakemoat.com/">&copy; cheesecakemoat.com</a>
+					</div>
+					
+				</div>
+				<br><br>
+				
+				<div class="section group">
+					<footer class="col span_12_of_12">
+						<b>&copy; 2015 Edel Smullen</b>
+					</footer>
+				</div>
+			</div>
+				
+</body>
+</html>

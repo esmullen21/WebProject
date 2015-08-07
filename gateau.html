@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<head>  <!-- Head contents part of gridsystem. Stylesheets my own -->
+
+	
+	
+	<title>Wonderful World of Baking</title>
+	<meta charset="utf-8">
+	<meta name="description" content="This website is about baking. It has a few recipes, a converter and a list of substitutions">
+	<meta name="keywords" content="baking, recipes, converter, substitutions">
+	<meta name="author" content="Edel Smullen using the grid by www.grahamrobertsonmiller.co.uk">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<!-- Stylesheets -->
+	<link rel="stylesheet" href="css+js/style.css" media="all">
+	<link rel="stylesheet" href="css+js/col.css" media="all">
+	<link href='https://fonts.googleapis.com/css?family=Dancing+Script' rel='stylesheet' type='text/css' />
+	<link href='https://fonts.googleapis.com/css?family=Petrona' rel='stylesheet' type='text/css' />
+
+	<style type="text/css">
+
+	</style>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+	<script type="text/javascript" src="css+js/script.js"></script>
+
+</head>
+
+<body>		
+			<div class="wrapper">	
+				<div class="section group">
+					
+					<div class="col span_12_of_12">
+						<header>Wonderful World of Baking   <span class="tablettrigger"><img src="images/logo.jpg" alt="hamburger"></span></header>
+					<!-- the tablettrigger class is for the navigation on tablet version-->
+					</div>
+				</div>
+				<div class="section group">
+					<span class="trigger"><img src="images/menulogo.jpg" alt="hamburger"></span> <!-- Trigger class for mobile navigation-->
+					<nav class="col span_12_of_12">
+						<ul>
+							<li><a href="index.html">Home</a></li>
+							<li><a href="basics.html">Basics</a></li>
+							<li><a href="converter.html">Converter</a></li>
+							<li><a href="recipes.html">Recipes</a></li>
+							<li><a href="substitutions.html">Substitutions</a></li>
+							<li><a href="contact.html">Contact</a></li>
+						</ul>
+					</nav>
+				</div>
+				<div class="breadcrumb">
+					<a href="index.html">Home</a> >
+					<a href="basics.html">Basics</a>/<a href="recipes.html">Recipes</a> >
+					Black Forest Gateau		
+				</div>
+				<div class="section group">
+					
+					<div class="col span_12_of_12 heading">
+						Black Forest Gateau
+					</div>
+					
+				</div>
+				<div class="section group">
+					<div class="col span_1_of_12">
+						<br>
+					</div>
+					<div class="col span_4_of_12 image">
+						<img src="images/gateau.jpg" alt="Black forest gateau" height="240" width="350"> <!--http://www.bbcgoodfood.com/recipes/2303676/black-forest-gteau-->
+					</div>
+					<div class="col span_1_of_12">
+						<br>
+					</div>
+					<div class="col span_4_of_12 convert_box">
+						<h3>Converter</h3>
+						<table class="convert_small"> <!-- a converter from one unit to anther -->
+							<form action="" method="post">
+							<tr class="from">
+								<td>From:</td>
+								<td>
+									<select name="unit1" id="unit1"> <!-- user selects the unit they are going from -->
+										<option value="Null">Select a unit</option>
+										<option value="unit">--Weight--</option>
+										<option value="pounds">Pounds</option>
+										<option value="ounce">Ounces</option>
+										<option value="grams">Grams</option>
+										<option value="kg">Kgs</option>
+										<option value="unit">--Volume--</option>
+										<option value="ml">Millilitres</option>
+										<option value="litres">Litres</option>
+										<option value="floz">Fluid ounces</option>
+										<option value="tsp">Teaspoons</option>
+										<option value="tbsp">Tablespoons</option>
+										<option value="unit">--Length--</option>										
+										<option value="mm">Millimetres</option>
+										<option value="cm">Centimetres</option>
+										<option value="in">Inches</option>
+										<option value="unit">--Temperature--</option>
+										<option value="celsius">Celsius</option>
+										<option value="fahrenheit">Fahrenheit</option>
+									</select>					
+								</td>
+								<td>&nbsp;</td>
+								<td><input type="text" name="value1" id="value1" placeholder="0"></td> <!-- user enters a value for the unit they are going from-->
+							</tr>
+							<tr>
+								<td colspan="4"><br></td>
+							</tr>
+							<tr class="to">
+								<td>To:</td>
+								<td>
+									<select name="unit2" id="unit2"> <!-- user selects the unit they are going from -->
+										<option value="Null">Select a unit</option>
+										<option value="unit">--Weight--</option>
+										<option value="pounds">Pounds</option>
+										<option value="ounce">Ounces</option>
+										<option value="grams">Grams</option>
+										<option value="kg">Kgs</option>
+										<option value="unit">--Volume--</option>
+										<option value="ml">Millilitres</option>
+										<option value="litres">Litres</option>
+										<option value="floz">Fluid ounces</option>
+										<option value="tsp">Teaspoons</option>
+										<option value="tbsp">Tablespoons</option>
+										<option value="unit">--Length--</option>										
+										<option value="mm">Millimetres</option>
+										<option value="cm">Centimetres</option>
+										<option value="in">Inches</option>
+										<option value="unit">--Temperature--</option>
+										<option value="celsius">Celsius</option>
+										<option value="fahrenheit">Fahrenheit</option>
+									</select>					
+								</td>
+								<td>&nbsp;</td>
+								<td><input type="text" name="value2" id="value2"  placeholder="0"></td> <!-- user can enter a value but it won't do anything. Answer written here-->
+							</tr>
+							<tr><td colspan="4"><br></td></tr>
+							<tr><td colspan="3"></td><td><button type="button" onclick="myConvert()">Convert</button></td></tr><!-- when the button is clicked, the javascript is implemented-->
+							</form>
+						</table>
+					</div>
+					<div class="col span 1_of_12">
+						<br>
+					</div>
+				</div>
+				<div class="section group">
+					<div class="col span_12_of_12 spacer">
+						<br>
+					</div>
+				</div>
+				<div class="section group">
+					<div class="col span_1_of_12">
+						<br>
+					</div>
+					<div class="col span_4_of_12 ingredients">
+						<ul>
+							<li>Ingredients</li>
+							<li><br></li>
+							<li><i>For the cake:</i></li>
+							<li>175g slated butter</li>
+							<li>200g dark chocolate</li>
+							<li>300g plain flour</li>
+							<li>375g golden caster sugar</li>
+							<li>25g cocoa powder</li>	
+							<li>1 teaspoon bicarbonate of soda</li>
+							<li>2 medium eggs</li>
+							<li>200g buttermilk or natural yogurt</li>
+							<li><i>To assemble:</i></li>
+							<li>425g pitted cherries (canned)</li>
+							<li>100g cherry jam</li>
+							<li>4 tablespoons kirsch or cherry juice</li>
+							<li>500ml double cream</li>
+							<li>2 tablespoons icing sugar</li>
+							<li>1 small punnet of fresh cherries</li>
+								
+							
+						</ul>
+					</div>
+					<div class="col span_1_of_12">
+						<br>
+					</div>
+					<div class="col span_5_of_12 method">
+					<p>Method</p>
+					<ol>
+					<li>Heat oven to 180 degrees celsius. <br>
+					Grease two 3x20cm cake tin</li> 
+					&nbsp;
+					<li>Place the butter (chunked) and  dark chocolate (in small chunks) in a bowl and heat over a saucepan of boiling water (bain marie) until melted. Wait for it to cool.</li>
+					&nbsp;
+					<li>In a bowl, mix together the flour, sugar, cocoa and bicarbonate of soda.</li>					
+					&nbsp;
+					<li>In a separate bowl, whisk the eggs and buttermilk (or yogurt) together. Add the chocolate mixture to this. <br>
+					Add 100ml boiling water and whisk till lump free</li>
+					&nbsp;
+					<li>Divide the mixture between the tins and place in the oven for 25minutes.<br>
+					Make sure they are springy and firm.Turn out and cool.</li>
+					&nbsp;
+					<li>Mix together 2 tablespoons of cheery juice from the can and the kirsch. Drizzle over the cakes.</li>
+					&nbsp;
+					<li>Combine the cherries and the jam. Add the 200ml of cream and remainder of the chocolate (melted).</li>
+					&nbsp;	
+					<li>Whisk the remaining cream and icing sugar together until soft.<br> Spread over two cakes and stack all the cakes together. Spread the choloclate cream mixture ove rhte top cake and pile the fresh cherries on top.  
+					</ol>
+					<a href="http://www.bbcgoodfood.com/recipes/2303676/black-forest-gteau">&copy; bbcgoodfood.com</a>
+					</div>
+					
+				</div>
+				<br><br>
+				
+				<div class="section group">
+					<footer class="col span_12_of_12">
+						<b>&copy; 2015 Edel Smullen</b>
+					</footer>
+				</div>
+			</div>
+				
+</body>
+</html>
